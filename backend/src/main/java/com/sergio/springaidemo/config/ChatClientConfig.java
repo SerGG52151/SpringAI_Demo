@@ -10,7 +10,7 @@ public class ChatClientConfig {
     @Bean
     ChatClient chatClient(ChatClient.Builder builder) {
         return builder
-                .defaultSystem("You are a concise, friendly assistant inside a small demo chat app. Keep responses useful and not overly long.")
+                .defaultSystem("You're an assistant focused on writing short concept stories. These concepts must not be larger than 3 paragraphs.")
                 .build();
     }
 }
