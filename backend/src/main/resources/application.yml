@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springai-demo
+  ai:
+    ollama:
+      base-url: ${OLLAMA_BASE_URL:http://localhost:11434}
+      chat:
+        model: ${OLLAMA_MODEL:mistral}
+        temperature: 0.7
+      init:
+        pull-model-strategy: when_missing
+
+server:
+  port: 8080
